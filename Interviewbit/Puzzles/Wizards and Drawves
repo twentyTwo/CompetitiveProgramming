@@ -1,0 +1,19 @@
+Hint: 
+Let denote Black Cap as 0 and White cap as 1
+
+1. Nth person will EXCLUSIVE OR all the 0's and 1's
+2. If the result is 0, he will say Black, otherwise White
+3. N-1 th person knows that, the EXCLUSIVE OR of his cap and the caps in front of him is what is said by Nth people.
+
+Thus 1 to N-1 th person can know what is their own cap color.
+
+
+
+
+Note:
+EXCLUSIVE OR outputs 0 for the similar input and outputs 1 for different input
+e.g.
+1 XOR 1 = 0
+1 XOR 0 = 1
+0 XOR 1 = 1
+0 XOR 0 = 0
