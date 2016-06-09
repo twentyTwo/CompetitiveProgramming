@@ -1,8 +1,8 @@
-        public string CountAndSay(int n)
-        {
-            int cnt = 0;
-            var numList = new List<string> { "1", "11" };
-            for (int i = 2; i < n; i++)
+public class Solution {
+    public string CountAndSay(int n) {
+        int cnt = 0;
+            var numList = new List<string> { "1", "11" }; // 1st two numbers
+            for (int i = 2; i < n; i++) // Starting from the 3rd number
             {
                 var prevNumber = numList[i - 1];
                 var prevDigit = prevNumber[0];
@@ -12,10 +12,7 @@
                 {
                     var currentDigit = j<prevNumber.Length ? prevNumber[j] : '\0';
 
-                    if (currentDigit == prevDigit)
-                    {
-                        cnt++;
-                    }
+                    if (currentDigit == prevDigit) cnt++;
                     else
                     {
                         cnt++;
@@ -28,4 +25,5 @@
 
             }
             return numList[n - 1].ToString();
-        }
+    }
+}
