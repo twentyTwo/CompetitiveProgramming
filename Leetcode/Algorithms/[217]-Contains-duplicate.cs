@@ -1,3 +1,6 @@
+/*
+    Logic: HashSet data structure can contain only the distinct numbers.
+*/
 public class Solution {
     public bool ContainsDuplicate(int[] nums) {
         var container = new HashSet<int>();
