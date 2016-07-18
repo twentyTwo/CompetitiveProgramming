@@ -3,7 +3,7 @@ public class Solution {
         {
             var nums = new int[10];
 
-            /*Check whether same number exists in a row */
+            /*For all the rows, check whether same number exists in a row */
             for (var i = 0; i < 9; i++)
             {
                 for (var j = 0; j < 9; j++)
@@ -29,7 +29,7 @@ public class Solution {
                 }
             }
             
-            /*Check whether same number exists in a column */
+            /*For all the columns, check whether same number exists in a column */
             for (var i = 0; i < 9; i++)
             {
                 for (var j = 0; j < 9; j++)
@@ -55,7 +55,7 @@ public class Solution {
                 }
             }
 
-            /* Check whether the 9 blocks of 3*3 contains same number */
+            /* Check whether the 9 blocks (3*3 block) contains same number */
             for (var R = 0; R < 7; R = R + 3)
             {
                 for (var C = 0; C < 7; C = C + 3)
